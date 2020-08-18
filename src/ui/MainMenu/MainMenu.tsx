@@ -1,9 +1,9 @@
 import React from 'react';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-import RestoreIcon from '@material-ui/icons/Restore';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import LocationOnIcon from '@material-ui/icons/LocationOn';
+import DashboardIcon from '@material-ui/icons/Dashboard';
+import HistoryIcon from '@material-ui/icons/History';
+import StorageIcon from '@material-ui/icons/Storage';
 
 interface IProps {
 
@@ -32,9 +32,9 @@ export default class MainMenu extends React.Component<IProps, IState> {
                   showLabels
                   className="root"
               >
-                  <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
-                  <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-                  <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
+                  <BottomNavigationAction label="Main" icon={<DashboardIcon />} />
+                  <BottomNavigationAction label="Timer" icon={<HistoryIcon />} />
+                  <BottomNavigationAction label="Menu" icon={<StorageIcon />} />
               </BottomNavigation>
           </div>
       );
