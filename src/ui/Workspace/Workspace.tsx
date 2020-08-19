@@ -6,6 +6,7 @@ import PaperButton from "../PaperButton/PaperButton";
 import Container from "@material-ui/core/Container";
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Dialog from '@material-ui/core/Dialog';
+import { AmplifySignOut } from '@aws-amplify/ui-react'
 
 type ButtonMeta = {
     caption: String;
@@ -53,8 +54,10 @@ export default function SimpleContainer(props: IProps) {
                     <DialogTitle id="simple-dialog-title">Set backup account</DialogTitle>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/IbT9D1UWoik" frameBorder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen></iframe>
+                            allowFullScreen/>
                 </Dialog>
+
+                <AmplifySignOut />
 
             </Container>
         </React.Fragment>

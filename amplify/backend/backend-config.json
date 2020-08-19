@@ -1,1 +1,10 @@
-{}
+{
+	"auth": {
+		"aolapp7b57f912": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"customAuth": false
+		}
+	}
+}

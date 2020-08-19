@@ -2,6 +2,7 @@ import React from 'react';
 import MainMenu from "./ui/MainMenu/MainMenu";
 import './App.css';
 import Workspace from "./ui/Workspace/Workspace";
+import { withAuthenticator } from '@aws-amplify/ui-react'
 
 function App() {
   return (
@@ -18,4 +19,4 @@ function App() {
   );
 }
 
-export default App;
+export default withAuthenticator(App);
