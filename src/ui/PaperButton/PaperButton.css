@@ -1,2 +1,6 @@
 .PaperButton {
+    padding-top: 5px;
+}
+.PaperButton:hover {
+    cursor: pointer;
 }
